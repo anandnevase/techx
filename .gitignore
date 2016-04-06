@@ -1,0 +1,10 @@
+*.pyc
+/dist
+.tmp
+/TechX_Calculator.egg-info
+.eggs
+.idea
+/build
+/*.egg
+.project
+.pydevproject
