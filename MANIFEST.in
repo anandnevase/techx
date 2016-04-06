@@ -1,0 +1,5 @@
+recursive-include techx/calculator/web/bower_components *
+recursive-include techx/calculator/web/compiled_assets *
+recursive-include techx/calculator/web/images *
+recursive-include techx/calculator/web/data *
+recursive-include techx/calculator/web/templates *

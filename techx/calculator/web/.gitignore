@@ -1,0 +1,11 @@
+/node_modules
+/.grunt
+/dist
+/compiled_assets
+/coverage
+/test-results
+
+# Generated Files
+/docs
+/css
+/app/templates.generated.js

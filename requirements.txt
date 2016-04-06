@@ -1,0 +1,11 @@
+# TechX 3rd party Python module dependencies
+# Install using
+#   pip install -r requirements.txt
+
+# Application dependencies
+flask == 0.10.1
+
+# Test dependencies
+nose == 1.3.7
+mock == 1.3.0
+coverage >= 4.0.3
