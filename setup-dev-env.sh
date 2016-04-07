@@ -39,10 +39,6 @@ else
     source calculator-dev/bin/activate
 fi
 
-# Setup Git hooks
-echo "Setting up git hooks"
-cp git-hooks/* .git/hooks
-
 export TECHX_CALCULATOR_AUTO_RELOAD=on
 export TECHX_CALCULATOR_ENV="DEV"
 
