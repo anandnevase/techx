@@ -3,4 +3,4 @@
 major.release : 1
 minor.release : 0
 point.release : 0
-build.number :  22
+build.number :  23
