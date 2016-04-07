@@ -20,19 +20,19 @@ from flask import request
 
 from techx.calculator.utils.logger import setup_logging
 from techx.calculator.web.init_app import app
-
-
-
+from techx.calculator.restcontrollers.operators import get_operators
 # REST APIs
-@app.route('/xporter/v1/eula', methods=['POST'], strict_slashes=False)
+@app.route('/calculator/v1/operators', methods=['GET'], strict_slashes=False)
+def operators():
+    return get_operators()
 
 def run_app():
 
     setup_logging()
-    logging.info('Starting AMF Xporter...')
-    # Enable auto-reload of code if XPLORER_AUTO_RELOAD environment variable is set.
+    logging.info('Starting TechX Calculator...')
+    # Enable auto-reload of code if TECHX_CALCULATOR_AUTO_RELOAD environment variable is set.
     # Useful in refreshing the demo site if new code is checked in.
-    autoreload = os.environ.get('XPORTER_AUTO_RELOAD')
+    autoreload = os.environ.get('TECHX_CALCULATOR_AUTO_RELOAD')
     if autoreload:
         app.run(host='0.0.0.0', port=8080, debug=True)
     else:
