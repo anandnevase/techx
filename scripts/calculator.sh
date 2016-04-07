@@ -25,7 +25,7 @@ run_calculator_application(){
     HTTP_LOG_DIR=$(python -c 'from techx.calculator import config; print config.logs_dir')
     mkdir -p $HTTP_LOG_DIR
     LOG_FILE="server.log"
-    xporter 2>&1 | tee -a $HTTP_LOG_DIR/$LOG_FILE
+    calculator 2>&1 | tee -a $HTTP_LOG_DIR/$LOG_FILE
 }
 
 if [ "$1" = "run" ]
