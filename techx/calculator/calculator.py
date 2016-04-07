@@ -8,6 +8,11 @@ class TechxCalculator:
     def subtract(a,b):
         print 'subtract'
         return a-b
+
+    @staticmethod
+    def divide(a,b):
+        print 'subtract'
+        return a/b
     
 
 if __name__ == '__main__':
