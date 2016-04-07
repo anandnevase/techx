@@ -47,7 +47,7 @@ setup(
     namespace_packages=['techx'],
     include_package_data=True,
     entry_points={
-        'console_scripts': ['calculator = techx.calulator.web.app:run_app']
+        'console_scripts': ['calculator = techx.calculator.web.app:run_app']
     },
     install_requires=install_requires,
     tests_require=tests_require,
