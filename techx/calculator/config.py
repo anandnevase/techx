@@ -13,7 +13,7 @@ conf_dir = os.environ.get('CALCULATOR_CONF_DIR') or os.path.join(
     os.path.expanduser('~/calculator'), 'conf')
 logs_dir = os.environ.get('CALCULATOR_LOGS_DIR') or os.path.join(
     os.path.expanduser('~/calculator'), 'logs')
-if os.environ.get('CALCULATOR_ENV') == 'DEV':
+if os.environ.get('TECHX_CALCULATOR_ENV') == 'DEV':
     log_level = os.environ.get('CALCULATOR_LOG_LEVEL', 'DEBUG').upper()
 else:
     log_level = os.environ.get('CALCULATOR_LOG_LEVEL', 'INFO').upper()
