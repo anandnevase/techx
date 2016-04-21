@@ -25,9 +25,9 @@ class TestOperators(unittest.TestCase):
     def test_GET_operators_success(self):
         mock_logger = self.create_patch(
             "techx.calculator.restcontrollers.operators.log")
-        expected_resp=['add','divide','subtract']
+        expected_resp=['subtract','add']
         resp = self.app.get('/calculator/v1/operators')
-        self.assertEqual(resp.data, json.dumps(expected_resp))
+        self.assertItemsEqual(resp.data, json.dumps(expected_resp))
 
     def test_GET_engagements_failure(self):
         mock_logger = self.create_patch(
