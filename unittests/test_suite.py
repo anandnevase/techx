@@ -1,4 +1,4 @@
-# Author: anand.nevase@xoriant.com
+# Author: Anand Nevase
 #
 # Description: Test suite for running all tests. Run : python test_suite.py
 
