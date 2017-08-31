@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 #
-# Author: anand.nevase@xoriant.com
-#
+# Author: Anand Nevase
 # Description: Tests for HTTP/REST interface for operators.
 
 
