@@ -2,8 +2,7 @@
 
 TechX Calculator. For Demo
 =========================================
-Then you can run AMF Xporter app
-
+Then you can run 
     $ calculator
 
 
