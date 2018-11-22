@@ -3,8 +3,9 @@
 # Cleanup the dist directory
 rm -rf dist/*
 
+BASEDIR=$(dirname "$0")
 # Build TechX Calculator egg
-source build.sh
+source $BASEDIR/build.sh
 
 EGG_FILE=$(ls dist/TechX_Calculator*.egg | cut -d "/" -f 2)
 VERSION=$(echo $EGG_FILE | cut -d "-" -f 2)
