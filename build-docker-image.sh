@@ -3,7 +3,7 @@
 # Cleanup the dist directory
 rm -rf dist/*
 
-BASEDIR=$(dirname "$0")
+BASEDIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 # Build TechX Calculator egg
 source $BASEDIR/build.sh
 
